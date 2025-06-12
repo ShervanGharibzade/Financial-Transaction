@@ -17,7 +17,7 @@
 
 ### Installation
 
-git repo: https://github.com/ShervanGharibzade/Financial-Transaction(https://github.com/ShervanGharibzade/Financial-Transaction)
+git repo: https://github.com/ShervanGharibzade/Financial-Transaction
 
 1. Clone the repository:
 
