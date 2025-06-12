@@ -1,0 +1,44 @@
+{
+  "name": "financial-transactions",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "api": "json-server --watch ./mockApi/db.json --port 4000 --routes ./mockApi/routes.json",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^4.35.7",
+    "antd": "^5.25.4",
+    "dayjs": "^1.11.13",
+    "json-server": "0.17.4",
+    "jspdf": "^3.0.1",
+    "jspdf-autotable": "^5.0.2",
+    "next": "14.2.4",
+    "next-pwa": "^5.6.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^14.6.1",
+    "@turbo/gen": "^2.5.4",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.3.3",
+    "jest": "^30.0.0",
+    "jest-environment-jsdom": "^30.0.0",
+    "typescript": "^5"
+  }
+}

@@ -1,0 +1,3334 @@
+{
+  "transactions": [
+    {
+      "id": "txn_001",
+      "amount": 120.5,
+      "currency": "USD",
+      "status": "completed",
+      "timestamp": "2025-05-20T14:30:22Z",
+      "description": "Payment for groceries",
+      "merchant": {
+        "name": "Grocery Store",
+        "id": "mcht_001"
+      },
+      "payment_method": {
+        "type": "credit_card",
+        "last4": "4242",
+        "brand": "visa"
+      },
+      "sender": {
+        "name": "Ali Reza",
+        "account_id": "acc_123"
+      },
+      "receiver": {
+        "name": "Grocery Store",
+        "account_id": "acc_456"
+      },
+      "fees": {
+        "processing_fee": 1.5,
+        "currency": "USD"
+      },
+      "metadata": {
+        "order_id": "ord_001",
+        "customer_id": "cust_001"
+      }
+    },
+    {
+      "id": "txn_002",
+      "amount": 49.99,
+      "currency": "EUR",
+      "status": "pending",
+      "timestamp": "2025-06-01T10:15:00Z",
+      "description": "Online course subscription",
+      "merchant": {
+        "name": "Learnify Academy",
+        "id": "mcht_002"
+      },
+      "payment_method": {
+        "type": "paypal",
+        "email": "sara.k@example.com"
+      },
+      "sender": {
+        "name": "Sara Karimi",
+        "account_id": "acc_124"
+      },
+      "receiver": {
+        "name": "Learnify Academy",
+        "account_id": "acc_457"
+      },
+      "fees": {
+        "processing_fee": 0.75,
+        "currency": "EUR"
+      },
+      "metadata": {
+        "order_id": "ord_002",
+        "customer_id": "cust_002"
+      }
+    },
+    {
+      "id": "txn_003",
+      "amount": 899,
+      "currency": "USD",
+      "status": "failed",
+      "timestamp": "2025-06-02T18:05:45Z",
+      "description": "New smartphone purchase",
+      "merchant": {
+        "name": "Tech Gadgets Inc.",
+        "id": "mcht_003"
+      },
+      "payment_method": {
+        "type": "credit_card",
+        "last4": "5555",
+        "brand": "mastercard"
+      },
+      "sender": {
+        "name": "Ben Schmidt",
+        "account_id": "acc_125"
+      },
+      "receiver": {
+        "name": "Tech Gadgets Inc.",
+        "account_id": "acc_458"
+      },
+      "fees": {
+        "processing_fee": 0,
+        "currency": "USD"
+      },
+      "metadata": {
+        "order_id": "ord_003",
+        "customer_id": "cust_003",
+        "failure_reason": "Insufficient funds"
+      }
+    },
+    {
+      "id": "txn_004",
+      "amount": 450.75,
+      "currency": "GBP",
+      "status": "completed",
+      "timestamp": "2025-06-03T09:00:12Z",
+      "description": "Flight ticket to London",
+      "merchant": {
+        "name": "Global Airlines",
+        "id": "mcht_004"
+      },
+      "payment_method": {
+        "type": "credit_card",
+        "last4": "8888",
+        "brand": "amex"
+      },
+      "sender": {
+        "name": "Fatemeh Ahmadi",
+        "account_id": "acc_126"
+      },
+      "receiver": {
+        "name": "Global Airlines",
+        "account_id": "acc_459"
+      },
+      "fees": {
+        "processing_fee": 10.5,
+        "currency": "GBP"
+      },
+      "metadata": {
+        "order_id": "ord_004",
+        "customer_id": "cust_004",
+        "booking_ref": "B-123XYZ"
+      }
+    },
+    {
+      "id": "txn_005",
+      "amount": 85.2,
+      "currency": "EUR",
+      "status": "completed",
+      "timestamp": "2025-06-05T20:30:00Z",
+      "description": "Dinner with friends",
+      "merchant": {
+        "name": "Mamma Mia Trattoria",
+        "id": "mcht_005"
+      },
+      "payment_method": {
+        "type": "debit_card",
+        "last4": "1234",
+        "brand": "maestro"
+      },
+      "sender": {
+        "name": "Klaus Müller",
+        "account_id": "acc_127"
+      },
+      "receiver": {
+        "name": "Mamma Mia Trattoria",
+        "account_id": "acc_460"
+      },
+      "fees": {
+        "processing_fee": 0.5,
+        "currency": "EUR"
+      },
+      "metadata": {
+        "order_id": "ord_005",
+        "customer_id": "cust_005",
+        "table_number": "7"
+      }
+    },
+    {
+      "id": "txn_006",
+      "amount": 320,
+      "currency": "USD",
+      "status": "pending",
+      "timestamp": "2025-06-08T11:45:10Z",
+      "description": "Hotel booking reservation",
+      "merchant": {
+        "name": "Seaside Resort",
+        "id": "mcht_006"
+      },
+      "payment_method": {
+        "type": "bank_transfer",
+        "iban_last4": "DE89"
+      },
+      "sender": {
+        "name": "John Smith",
+        "account_id": "acc_128"
+      },
+      "receiver": {
+        "name": "Seaside Resort",
+        "account_id": "acc_461"
+      },
+      "fees": {
+        "processing_fee": 2,
+        "currency": "USD"
+      },
+      "metadata": {
+        "order_id": "ord_006",
+        "customer_id": "cust_006",
+        "check_in_date": "2025-07-10"
+      }
+    },
+    {
+      "id": "txn_007",
+      "amount": 9.99,
+      "currency": "USD",
+      "status": "completed",
+      "timestamp": "2025-06-09T00:00:00Z",
+      "description": "Monthly music streaming fee",
+      "merchant": {
+        "name": "MusicStream",
+        "id": "mcht_007"
+      },
+      "payment_method": {
+        "type": "paypal",
+        "email": "ali.r@example.com"
+      },
+      "sender": {
+        "name": "Ali Reza",
+        "account_id": "acc_123"
+      },
+      "receiver": {
+        "name": "MusicStream",
+        "account_id": "acc_462"
+      },
+      "fees": {
+        "processing_fee": 0.25,
+        "currency": "USD"
+      },
+      "metadata": {
+        "order_id": "ord_007",
+        "customer_id": "cust_001",
+        "subscription_id": "sub_monthly"
+      }
+    },
+    {
+      "id": "txn_008",
+      "amount": 25.4,
+      "currency": "EUR",
+      "status": "completed",
+      "timestamp": "2025-06-09T12:21:30Z",
+      "description": "Train ticket",
+      "merchant": {
+        "name": "Deutsche Bahn",
+        "id": "mcht_008"
+      },
+      "payment_method": {
+        "type": "credit_card",
+        "last4": "0007",
+        "brand": "visa"
+      },
+      "sender": {
+        "name": "Anna Wagner",
+        "account_id": "acc_129"
+      },
+      "receiver": {
+        "name": "Deutsche Bahn",
+        "account_id": "acc_463"
+      },
+      "fees": {
+        "processing_fee": 0.45,
+        "currency": "EUR"
+      },
+      "metadata": {
+        "order_id": "ord_008",
+        "customer_id": "cust_007",
+        "journey": "Berlin-Hamburg"
+      }
+    },
+    {
+      "id": "txn_009",
+      "amount": 4.8,
+      "currency": "EUR",
+      "status": "completed",
+      "timestamp": "2025-03-10T08:15:00Z",
+      "description": "Morning Coffee",
+      "merchant": {
+        "name": "Starbeans Coffee",
+        "id": "mcht_009"
+      },
+      "payment_method": {
+        "type": "debit_card",
+        "last4": "5678",
+        "brand": "girocard"
+      },
+      "sender": {
+        "name": "Lukas Bauer",
+        "account_id": "acc_130"
+      },
+      "receiver": {
+        "name": "Starbeans Coffee",
+        "account_id": "acc_464"
+      },
+      "fees": {
+        "processing_fee": 0.1,
+        "currency": "EUR"
+      },
+      "metadata": {
+        "order_id": "ord_009",
+        "customer_id": "cust_008"
+      }
+    },
+    {
+      "id": "txn_010",
+      "amount": 29.95,
+      "currency": "EUR",
+      "status": "completed",
+      "timestamp": "2025-01-09T19:45:10Z",
+      "description": "Online book purchase",
+      "merchant": {
+        "name": "Buchhandlung Schmitt",
+        "id": "mcht_010"
+      },
+      "payment_method": {
+        "type": "paypal",
+        "email": "skeller@example.com"
+      },
+      "sender": {
+        "name": "Sophie Keller",
+        "account_id": "acc_131"
+      },
+      "receiver": {
+        "name": "Buchhandlung Schmitt",
+        "account_id": "acc_465"
+      },
+      "fees": {
+        "processing_fee": 0.55,
+        "currency": "EUR"
+      },
+      "metadata": {
+        "order_id": "ord_010",
+        "customer_id": "cust_009",
+        "item": "ISBN 978-3-16-148410-0"
+      }
+    },
+    {
+      "id": "txn_011",
+      "amount": 18.5,
+      "currency": "EUR",
+      "status": "completed",
+      "timestamp": "2025-09-07T14:05:25Z",
+      "description": "Lunch with colleague",
+      "merchant": {
+        "name": "Vapiano Restaurant",
+        "id": "mcht_011"
+      },
+      "payment_method": {
+        "type": "credit_card",
+        "last4": "1121",
+        "brand": "mastercard"
+      },
+      "sender": {
+        "name": "Max Fischer",
+        "account_id": "acc_132"
+      },
+      "receiver": {
+        "name": "Vapiano Restaurant",
+        "account_id": "acc_466"
+      },
+      "fees": {
+        "processing_fee": 0.35,
+        "currency": "EUR"
+      },
+      "metadata": {
+        "order_id": "ord_011",
+        "customer_id": "cust_010",
+        "table_number": "12A"
+      }
+    },
+    {
+      "id": "txn_012",
+      "amount": 49.99,
+      "currency": "EUR",
+      "status": "pending",
+      "timestamp": "2025-07-01T10:00:00Z",
+      "description": "Monthly gym membership",
+      "merchant": {
+        "name": "FitX Gym",
+        "id": "mcht_012"
+      },
+      "payment_method": {
+        "type": "bank_transfer",
+        "iban_last4": "DE15"
+      },
+      "sender": {
+        "name": "Julia Richter",
+        "account_id": "acc_133"
+      },
+      "receiver": {
+        "name": "FitX Gym",
+        "account_id": "acc_467"
+      },
+      "fees": {
+        "processing_fee": 0.2,
+        "currency": "EUR"
+      },
+      "metadata": {
+        "order_id": "ord_012",
+        "customer_id": "cust_011",
+        "subscription_id": "SUB-GYM-458"
+      }
+    },
+    {
+      "id": "txn_013",
+      "amount": 179,
+      "currency": "EUR",
+      "status": "completed",
+      "timestamp": "2025-08-28T16:50:30Z",
+      "description": "Electronics - new headphones",
+      "merchant": {
+        "name": "MediaMarkt",
+        "id": "mcht_013"
+      },
+      "payment_method": {
+        "type": "credit_card",
+        "last4": "9876",
+        "brand": "visa"
+      },
+      "sender": {
+        "name": "Tom Schneider",
+        "account_id": "acc_134"
+      },
+      "receiver": {
+        "name": "MediaMarkt",
+        "account_id": "acc_468"
+      },
+      "fees": {
+        "processing_fee": 1.99,
+        "currency": "EUR"
+      },
+      "metadata": {
+        "order_id": "ord_013",
+        "customer_id": "cust_012",
+        "product_sku": "HD-599-PRO"
+      }
+    },
+    {
+      "id": "234sdfs",
+      "amount": 23234,
+      "currency": "IRR",
+      "status": "completed",
+      "timestamp": "2025-06-10T21:30:14.900Z",
+      "description": "edit-1",
+      "merchant": {
+        "name": "shervan",
+        "id": "324sdf"
+      },
+      "payment_method": {
+        "type": "paypal",
+        "brand": "mastercard",
+        "last4": "1233"
+      },
+      "sender": {
+        "name": "shervan",
+        "account_id": "3123"
+      },
+      "receiver": {
+        "name": "shervan",
+        "account_id": "12312"
+      },
+      "fees": {
+        "processing_fee": 43242,
+        "currency": "EUR"
+      },
+      "metadata": {
+        "order_id": "o222",
+        "customer_id": "123123"
+      }
+    },
+    {
+      "id": "txn_015",
+      "amount": 15.99,
+      "currency": "USD",
+      "status": "completed",
+      "timestamp": "2025-04-15T11:00:00Z",
+      "description": "Spotify Subscription",
+      "merchant": {
+        "name": "Spotify",
+        "id": "mcht_015"
+      },
+      "payment_method": {
+        "type": "paypal",
+        "email": "john.s@example.com"
+      },
+      "sender": {
+        "name": "John Smith",
+        "account_id": "acc_128"
+      },
+      "receiver": {
+        "name": "Spotify",
+        "account_id": "acc_470"
+      },
+      "fees": {
+        "processing_fee": 0.3,
+        "currency": "USD"
+      },
+      "metadata": {
+        "order_id": "ord_015",
+        "customer_id": "cust_006",
+        "subscription_id": "spotify_premium"
+      }
+    },
+    {
+      "id": "txn_016",
+      "amount": 750,
+      "currency": "EUR",
+      "status": "pending",
+      "timestamp": "2025-06-11T10:30:00Z",
+      "description": "Rent Payment",
+      "merchant": {
+        "name": "Landlord Properties",
+        "id": "mcht_016"
+      },
+      "payment_method": {
+        "type": "bank_transfer",
+        "iban_last4": "DE77"
+      },
+      "sender": {
+        "name": "Anna Wagner",
+        "account_id": "acc_129"
+      },
+      "receiver": {
+        "name": "Landlord Properties",
+        "account_id": "acc_471"
+      },
+      "fees": {
+        "processing_fee": 0,
+        "currency": "EUR"
+      },
+      "metadata": {
+        "order_id": "ord_016",
+        "customer_id": "cust_007",
+        "property_id": "APT-101"
+      }
+    },
+    {
+      "id": "txn_017",
+      "amount": 299.5,
+      "currency": "GBP",
+      "status": "failed",
+      "timestamp": "2025-05-02T14:20:10Z",
+      "description": "Concert Tickets",
+      "merchant": {
+        "name": "TicketMaster",
+        "id": "mcht_017"
+      },
+      "payment_method": {
+        "type": "credit_card",
+        "last4": "1111",
+        "brand": "mastercard"
+      },
+      "sender": {
+        "name": "Ben Schmidt",
+        "account_id": "acc_125"
+      },
+      "receiver": {
+        "name": "TicketMaster",
+        "account_id": "acc_472"
+      },
+      "fees": {
+        "processing_fee": 5,
+        "currency": "GBP"
+      },
+      "metadata": {
+        "order_id": "ord_017",
+        "customer_id": "cust_003",
+        "failure_reason": "Card declined"
+      }
+    },
+    {
+      "id": "txn_018",
+      "amount": 34.9,
+      "currency": "USD",
+      "status": "completed",
+      "timestamp": "2025-06-08T09:00:00Z",
+      "description": "Amazon Purchase",
+      "merchant": {
+        "name": "Amazon",
+        "id": "mcht_018"
+      },
+      "payment_method": {
+        "type": "credit_card",
+        "last4": "4242",
+        "brand": "visa"
+      },
+      "sender": {
+        "name": "Ali Reza",
+        "account_id": "acc_123"
+      },
+      "receiver": {
+        "name": "Amazon",
+        "account_id": "acc_473"
+      },
+      "fees": {
+        "processing_fee": 0,
+        "currency": "USD"
+      },
+      "metadata": {
+        "order_id": "ord_018",
+        "customer_id": "cust_001"
+      }
+    },
+    {
+      "id": "txn_019",
+      "amount": 99,
+      "currency": "EUR",
+      "status": "completed",
+      "timestamp": "2025-02-20T18:00:00Z",
+      "description": "Zalando Order",
+      "merchant": {
+        "name": "Zalando",
+        "id": "mcht_019"
+      },
+      "payment_method": {
+        "type": "paypal",
+        "email": "s.keller@example.com"
+      },
+      "sender": {
+        "name": "Sophie Keller",
+        "account_id": "acc_131"
+      },
+      "receiver": {
+        "name": "Zalando",
+        "account_id": "acc_474"
+      },
+      "fees": {
+        "processing_fee": 1.5,
+        "currency": "EUR"
+      },
+      "metadata": {
+        "order_id": "ord_019",
+        "customer_id": "cust_009"
+      }
+    },
+    {
+      "id": "txn_020",
+      "amount": 1250,
+      "currency": "USD",
+      "status": "pending",
+      "timestamp": "2025-06-10T15:00:00Z",
+      "description": "MacBook Air Purchase",
+      "merchant": {
+        "name": "Apple Store",
+        "id": "mcht_020"
+      },
+      "payment_method": {
+        "type": "credit_card",
+        "last4": "8888",
+        "brand": "amex"
+      },
+      "sender": {
+        "name": "Fatemeh Ahmadi",
+        "account_id": "acc_126"
+      },
+      "receiver": {
+        "name": "Apple Store",
+        "account_id": "acc_475"
+      },
+      "fees": {
+        "processing_fee": 25,
+        "currency": "USD"
+      },
+      "metadata": {
+        "order_id": "ord_020",
+        "customer_id": "cust_004"
+      }
+    },
+    {
+      "id": "txn_021",
+      "amount": 8.5,
+      "currency": "EUR",
+      "status": "completed",
+      "timestamp": "2025-03-25T13:00:00Z",
+      "description": "Cinema Ticket",
+      "merchant": {
+        "name": "Cineplex",
+        "id": "mcht_021"
+      },
+      "payment_method": {
+        "type": "debit_card",
+        "last4": "5678",
+        "brand": "girocard"
+      },
+      "sender": {
+        "name": "Lukas Bauer",
+        "account_id": "acc_130"
+      },
+      "receiver": {
+        "name": "Cineplex",
+        "account_id": "acc_476"
+      },
+      "fees": {
+        "processing_fee": 0.15,
+        "currency": "EUR"
+      },
+      "metadata": {
+        "order_id": "ord_021",
+        "customer_id": "cust_008"
+      }
+    },
+    {
+      "id": "txn_022",
+      "amount": 54.2,
+      "currency": "EUR",
+      "status": "completed",
+      "timestamp": "2025-04-30T08:45:00Z",
+      "description": "Weekly Groceries",
+      "merchant": {
+        "name": "Rewe",
+        "id": "mcht_022"
+      },
+      "payment_method": {
+        "type": "debit_card",
+        "last4": "1234",
+        "brand": "maestro"
+      },
+      "sender": {
+        "name": "Klaus Müller",
+        "account_id": "acc_127"
+      },
+      "receiver": {
+        "name": "Rewe",
+        "account_id": "acc_477"
+      },
+      "fees": {
+        "processing_fee": 0,
+        "currency": "EUR"
+      },
+      "metadata": {
+        "order_id": "ord_022",
+        "customer_id": "cust_005"
+      }
+    },
+    {
+      "id": "txn_023",
+      "amount": 19.99,
+      "currency": "USD",
+      "status": "completed",
+      "timestamp": "2025-05-18T19:00:00Z",
+      "description": "Netflix Subscription",
+      "merchant": {
+        "name": "Netflix",
+        "id": "mcht_023"
+      },
+      "payment_method": {
+        "type": "paypal",
+        "email": "m.fischer@example.com"
+      },
+      "sender": {
+        "name": "Max Fischer",
+        "account_id": "acc_132"
+      },
+      "receiver": {
+        "name": "Netflix",
+        "account_id": "acc_478"
+      },
+      "fees": {
+        "processing_fee": 0.4,
+        "currency": "USD"
+      },
+      "metadata": {
+        "order_id": "ord_023",
+        "customer_id": "cust_010"
+      }
+    },
+    {
+      "id": "txn_024",
+      "amount": 45,
+      "currency": "EUR",
+      "status": "completed",
+      "timestamp": "2025-06-05T12:00:00Z",
+      "description": "Gasoline",
+      "merchant": {
+        "name": "Aral",
+        "id": "mcht_024"
+      },
+      "payment_method": {
+        "type": "credit_card",
+        "last4": "9876",
+        "brand": "visa"
+      },
+      "sender": {
+        "name": "Tom Schneider",
+        "account_id": "acc_134"
+      },
+      "receiver": {
+        "name": "Aral",
+        "account_id": "acc_479"
+      },
+      "fees": {
+        "processing_fee": 0.9,
+        "currency": "EUR"
+      },
+      "metadata": {
+        "order_id": "ord_024",
+        "customer_id": "cust_012"
+      }
+    },
+    {
+      "id": "txn_025",
+      "amount": 88.3,
+      "currency": "EUR",
+      "status": "completed",
+      "timestamp": "2025-01-15T10:00:00Z",
+      "description": "IKEA Purchase",
+      "merchant": {
+        "name": "IKEA",
+        "id": "mcht_025"
+      },
+      "payment_method": {
+        "type": "credit_card",
+        "last4": "1121",
+        "brand": "mastercard"
+      },
+      "sender": {
+        "name": "Julia Richter",
+        "account_id": "acc_133"
+      },
+      "receiver": {
+        "name": "IKEA",
+        "account_id": "acc_480"
+      },
+      "fees": {
+        "processing_fee": 1.75,
+        "currency": "EUR"
+      },
+      "metadata": {
+        "order_id": "ord_025",
+        "customer_id": "cust_011"
+      }
+    },
+    {
+      "id": "txn_026",
+      "amount": 12,
+      "currency": "USD",
+      "status": "failed",
+      "timestamp": "2025-06-09T18:30:00Z",
+      "description": "Google Play App",
+      "merchant": {
+        "name": "Google Play",
+        "id": "mcht_026"
+      },
+      "payment_method": {
+        "type": "paypal",
+        "email": "s.karimi@example.com"
+      },
+      "sender": {
+        "name": "Sara Karimi",
+        "account_id": "acc_124"
+      },
+      "receiver": {
+        "name": "Google Play",
+        "account_id": "acc_481"
+      },
+      "fees": {
+        "processing_fee": 0.25,
+        "currency": "USD"
+      },
+      "metadata": {
+        "order_id": "ord_026",
+        "customer_id": "cust_002",
+        "failure_reason": "Payment expired"
+      }
+    },
+    {
+      "id": "txn_027",
+      "amount": 420,
+      "currency": "EUR",
+      "status": "pending",
+      "timestamp": "2025-06-12T09:00:00Z",
+      "description": "Lufthansa Flight",
+      "merchant": {
+        "name": "Lufthansa",
+        "id": "mcht_027"
+      },
+      "payment_method": {
+        "type": "bank_transfer",
+        "iban_last4": "DE99"
+      },
+      "sender": {
+        "name": "Maria Garcia",
+        "account_id": "acc_135"
+      },
+      "receiver": {
+        "name": "Lufthansa",
+        "account_id": "acc_482"
+      },
+      "fees": {
+        "processing_fee": 0,
+        "currency": "EUR"
+      },
+      "metadata": {
+        "order_id": "ord_027",
+        "customer_id": "cust_013",
+        "booking_ref": "LH-456ABC"
+      }
+    },
+    {
+      "id": "txn_028",
+      "amount": 22.75,
+      "currency": "GBP",
+      "status": "completed",
+      "timestamp": "2025-03-03T20:00:00Z",
+      "description": "Uber Ride",
+      "merchant": {
+        "name": "Uber",
+        "id": "mcht_028"
+      },
+      "payment_method": {
+        "type": "credit_card",
+        "last4": "4242",
+        "brand": "visa"
+      },
+      "sender": {
+        "name": "Ali Reza",
+        "account_id": "acc_123"
+      },
+      "receiver": {
+        "name": "Uber",
+        "account_id": "acc_483"
+      },
+      "fees": {
+        "processing_fee": 0.45,
+        "currency": "GBP"
+      },
+      "metadata": {
+        "order_id": "ord_028",
+        "customer_id": "cust_001"
+      }
+    },
+    {
+      "id": "txn_029",
+      "amount": 7.99,
+      "currency": "USD",
+      "status": "completed",
+      "timestamp": "2025-05-22T12:00:00Z",
+      "description": "Mobile Game Purchase",
+      "merchant": {
+        "name": "Supercell",
+        "id": "mcht_029"
+      },
+      "payment_method": {
+        "type": "paypal",
+        "email": "b.schmidt@example.com"
+      },
+      "sender": {
+        "name": "Ben Schmidt",
+        "account_id": "acc_125"
+      },
+      "receiver": {
+        "name": "Supercell",
+        "account_id": "acc_484"
+      },
+      "fees": {
+        "processing_fee": 0.15,
+        "currency": "USD"
+      },
+      "metadata": {
+        "order_id": "ord_029",
+        "customer_id": "cust_003"
+      }
+    },
+    {
+      "id": "txn_030",
+      "amount": 65.5,
+      "currency": "EUR",
+      "status": "completed",
+      "timestamp": "2025-06-07T16:00:00Z",
+      "description": "H&M Clothing",
+      "merchant": {
+        "name": "H&M",
+        "id": "mcht_030"
+      },
+      "payment_method": {
+        "type": "credit_card",
+        "last4": "1111",
+        "brand": "mastercard"
+      },
+      "sender": {
+        "name": "Fatemeh Ahmadi",
+        "account_id": "acc_126"
+      },
+      "receiver": {
+        "name": "H&M",
+        "account_id": "acc_485"
+      },
+      "fees": {
+        "processing_fee": 1.3,
+        "currency": "EUR"
+      },
+      "metadata": {
+        "order_id": "ord_030",
+        "customer_id": "cust_004"
+      }
+    },
+    {
+      "id": "txn_031",
+      "amount": 199,
+      "currency": "EUR",
+      "status": "pending",
+      "timestamp": "2025-06-13T11:00:00Z",
+      "description": "OBI Hardware",
+      "merchant": {
+        "name": "OBI",
+        "id": "mcht_031"
+      },
+      "payment_method": {
+        "type": "bank_transfer",
+        "iban_last4": "DE22"
+      },
+      "sender": {
+        "name": "Chen Wei",
+        "account_id": "acc_136"
+      },
+      "receiver": {
+        "name": "OBI",
+        "account_id": "acc_486"
+      },
+      "fees": {
+        "processing_fee": 0,
+        "currency": "EUR"
+      },
+      "metadata": {
+        "order_id": "ord_031",
+        "customer_id": "cust_014"
+      }
+    },
+    {
+      "id": "txn_032",
+      "amount": 42.1,
+      "currency": "USD",
+      "status": "completed",
+      "timestamp": "2025-02-10T14:00:00Z",
+      "description": "Book Depository Order",
+      "merchant": {
+        "name": "Book Depository",
+        "id": "mcht_032"
+      },
+      "payment_method": {
+        "type": "credit_card",
+        "last4": "0007",
+        "brand": "visa"
+      },
+      "sender": {
+        "name": "Anna Wagner",
+        "account_id": "acc_129"
+      },
+      "receiver": {
+        "name": "Book Depository",
+        "account_id": "acc_487"
+      },
+      "fees": {
+        "processing_fee": 0.85,
+        "currency": "USD"
+      },
+      "metadata": {
+        "order_id": "ord_032",
+        "customer_id": "cust_007"
+      }
+    },
+    {
+      "id": "txn_033",
+      "amount": 5,
+      "currency": "GBP",
+      "status": "completed",
+      "timestamp": "2025-04-05T10:00:00Z",
+      "description": "Donation",
+      "merchant": {
+        "name": "Charity Foundation",
+        "id": "mcht_033"
+      },
+      "payment_method": {
+        "type": "paypal",
+        "email": "y.tanaka@example.com"
+      },
+      "sender": {
+        "name": "Yuki Tanaka",
+        "account_id": "acc_137"
+      },
+      "receiver": {
+        "name": "Charity Foundation",
+        "account_id": "acc_488"
+      },
+      "fees": {
+        "processing_fee": 0.1,
+        "currency": "GBP"
+      },
+      "metadata": {
+        "order_id": "ord_033",
+        "customer_id": "cust_015"
+      }
+    },
+    {
+      "id": "txn_034",
+      "amount": 350,
+      "currency": "EUR",
+      "status": "failed",
+      "timestamp": "2025-06-01T12:00:00Z",
+      "description": "Saturn Electronics",
+      "merchant": {
+        "name": "Saturn",
+        "id": "mcht_034"
+      },
+      "payment_method": {
+        "type": "credit_card",
+        "last4": "5678",
+        "brand": "girocard"
+      },
+      "sender": {
+        "name": "Lukas Bauer",
+        "account_id": "acc_130"
+      },
+      "receiver": {
+        "name": "Saturn",
+        "account_id": "acc_489"
+      },
+      "fees": {
+        "processing_fee": 7,
+        "currency": "EUR"
+      },
+      "metadata": {
+        "order_id": "ord_034",
+        "customer_id": "cust_008",
+        "failure_reason": "Suspected fraud"
+      }
+    },
+    {
+      "id": "txn_035",
+      "amount": 25,
+      "currency": "EUR",
+      "status": "completed",
+      "timestamp": "2025-05-28T18:00:00Z",
+      "description": "Food Delivery",
+      "merchant": {
+        "name": "Lieferando",
+        "id": "mcht_035"
+      },
+      "payment_method": {
+        "type": "paypal",
+        "email": "j.richter@example.com"
+      },
+      "sender": {
+        "name": "Julia Richter",
+        "account_id": "acc_133"
+      },
+      "receiver": {
+        "name": "Lieferando",
+        "account_id": "acc_490"
+      },
+      "fees": {
+        "processing_fee": 0.5,
+        "currency": "EUR"
+      },
+      "metadata": {
+        "order_id": "ord_035",
+        "customer_id": "cust_011"
+      }
+    },
+    {
+      "id": "txn_036",
+      "amount": 180,
+      "currency": "EUR",
+      "status": "completed",
+      "timestamp": "2025-06-02T10:00:00Z",
+      "description": "Deutsche Bahn Ticket",
+      "merchant": {
+        "name": "Deutsche Bahn",
+        "id": "mcht_008"
+      },
+      "payment_method": {
+        "type": "credit_card",
+        "last4": "1121",
+        "brand": "mastercard"
+      },
+      "sender": {
+        "name": "Max Fischer",
+        "account_id": "acc_132"
+      },
+      "receiver": {
+        "name": "Deutsche Bahn",
+        "account_id": "acc_463"
+      },
+      "fees": {
+        "processing_fee": 3.6,
+        "currency": "EUR"
+      },
+      "metadata": {
+        "order_id": "ord_036",
+        "customer_id": "cust_010",
+        "journey": "Munich-Frankfurt"
+      }
+    },
+    {
+      "id": "txn_037",
+      "amount": 33.5,
+      "currency": "EUR",
+      "status": "pending",
+      "timestamp": "2025-06-14T12:00:00Z",
+      "description": "Online Shopping",
+      "merchant": {
+        "name": "Otto",
+        "id": "mcht_037"
+      },
+      "payment_method": {
+        "type": "bank_transfer",
+        "iban_last4": "DE44"
+      },
+      "sender": {
+        "name": "Klaus Müller",
+        "account_id": "acc_127"
+      },
+      "receiver": {
+        "name": "Otto",
+        "account_id": "acc_491"
+      },
+      "fees": {
+        "processing_fee": 0,
+        "currency": "EUR"
+      },
+      "metadata": {
+        "order_id": "ord_037",
+        "customer_id": "cust_005"
+      }
+    },
+    {
+      "id": "txn_038",
+      "amount": 499.99,
+      "currency": "USD",
+      "status": "completed",
+      "timestamp": "2024-12-20T10:00:00Z",
+      "description": "PlayStation 5",
+      "merchant": {
+        "name": "GameStop",
+        "id": "mcht_038"
+      },
+      "payment_method": {
+        "type": "credit_card",
+        "last4": "8888",
+        "brand": "amex"
+      },
+      "sender": {
+        "name": "John Smith",
+        "account_id": "acc_128"
+      },
+      "receiver": {
+        "name": "GameStop",
+        "account_id": "acc_492"
+      },
+      "fees": {
+        "processing_fee": 10,
+        "currency": "USD"
+      },
+      "metadata": {
+        "order_id": "ord_038",
+        "customer_id": "cust_006"
+      }
+    },
+    {
+      "id": "txn_039",
+      "amount": 14.99,
+      "currency": "GBP",
+      "status": "completed",
+      "timestamp": "2025-06-01T00:00:00Z",
+      "description": "Audible Subscription",
+      "merchant": {
+        "name": "Audible",
+        "id": "mcht_039"
+      },
+      "payment_method": {
+        "type": "credit_card",
+        "last4": "9876",
+        "brand": "visa"
+      },
+      "sender": {
+        "name": "Tom Schneider",
+        "account_id": "acc_134"
+      },
+      "receiver": {
+        "name": "Audible",
+        "account_id": "acc_493"
+      },
+      "fees": {
+        "processing_fee": 0.3,
+        "currency": "GBP"
+      },
+      "metadata": {
+        "order_id": "ord_039",
+        "customer_id": "cust_012"
+      }
+    },
+    {
+      "id": "txn_040",
+      "amount": 78,
+      "currency": "EUR",
+      "status": "completed",
+      "timestamp": "2025-05-15T19:30:00Z",
+      "description": "Dinner at Steakhouse",
+      "merchant": {
+        "name": "Block House",
+        "id": "mcht_040"
+      },
+      "payment_method": {
+        "type": "credit_card",
+        "last4": "1111",
+        "brand": "mastercard"
+      },
+      "sender": {
+        "name": "Maria Garcia",
+        "account_id": "acc_135"
+      },
+      "receiver": {
+        "name": "Block House",
+        "account_id": "acc_494"
+      },
+      "fees": {
+        "processing_fee": 1.55,
+        "currency": "EUR"
+      },
+      "metadata": {
+        "order_id": "ord_040",
+        "customer_id": "cust_013"
+      }
+    },
+    {
+      "id": "txn_041",
+      "amount": 250,
+      "currency": "EUR",
+      "status": "pending",
+      "timestamp": "2025-06-15T14:00:00Z",
+      "description": "Weekend Trip Deposit",
+      "merchant": {
+        "name": "Travel Agency",
+        "id": "mcht_041"
+      },
+      "payment_method": {
+        "type": "bank_transfer",
+        "iban_last4": "DE55"
+      },
+      "sender": {
+        "name": "Chen Wei",
+        "account_id": "acc_136"
+      },
+      "receiver": {
+        "name": "Travel Agency",
+        "account_id": "acc_495"
+      },
+      "fees": {
+        "processing_fee": 0,
+        "currency": "EUR"
+      },
+      "metadata": {
+        "order_id": "ord_041",
+        "customer_id": "cust_014"
+      }
+    },
+    {
+      "id": "txn_042",
+      "amount": 9.99,
+      "currency": "USD",
+      "status": "completed",
+      "timestamp": "2025-05-01T10:00:00Z",
+      "description": "Cloud Storage",
+      "merchant": {
+        "name": "Dropbox",
+        "id": "mcht_042"
+      },
+      "payment_method": {
+        "type": "paypal",
+        "email": "a.wagner@example.com"
+      },
+      "sender": {
+        "name": "Anna Wagner",
+        "account_id": "acc_129"
+      },
+      "receiver": {
+        "name": "Dropbox",
+        "account_id": "acc_496"
+      },
+      "fees": {
+        "processing_fee": 0.2,
+        "currency": "USD"
+      },
+      "metadata": {
+        "order_id": "ord_042",
+        "customer_id": "cust_007"
+      }
+    },
+    {
+      "id": "txn_043",
+      "amount": 15000,
+      "currency": "JPY",
+      "status": "completed",
+      "timestamp": "2025-04-20T12:00:00Z",
+      "description": "Gift Card",
+      "merchant": {
+        "name": "Nintendo eShop",
+        "id": "mcht_043"
+      },
+      "payment_method": {
+        "type": "credit_card",
+        "last4": "4321",
+        "brand": "jcb"
+      },
+      "sender": {
+        "name": "Yuki Tanaka",
+        "account_id": "acc_137"
+      },
+      "receiver": {
+        "name": "Nintendo eShop",
+        "account_id": "acc_497"
+      },
+      "fees": {
+        "processing_fee": 300,
+        "currency": "JPY"
+      },
+      "metadata": {
+        "order_id": "ord_043",
+        "customer_id": "cust_015"
+      }
+    },
+    {
+      "id": "txn_044",
+      "amount": 62,
+      "currency": "EUR",
+      "status": "completed",
+      "timestamp": "2025-06-03T11:00:00Z",
+      "description": "Edeka Groceries",
+      "merchant": {
+        "name": "Edeka",
+        "id": "mcht_044"
+      },
+      "payment_method": {
+        "type": "debit_card",
+        "last4": "5678",
+        "brand": "girocard"
+      },
+      "sender": {
+        "name": "Lukas Bauer",
+        "account_id": "acc_130"
+      },
+      "receiver": {
+        "name": "Edeka",
+        "account_id": "acc_498"
+      },
+      "fees": {
+        "processing_fee": 0,
+        "currency": "EUR"
+      },
+      "metadata": {
+        "order_id": "ord_044",
+        "customer_id": "cust_008"
+      }
+    },
+    {
+      "id": "txn_045",
+      "amount": 12.5,
+      "currency": "EUR",
+      "status": "failed",
+      "timestamp": "2025-05-30T13:00:00Z",
+      "description": "Lunch",
+      "merchant": {
+        "name": "Local Cafe",
+        "id": "mcht_045"
+      },
+      "payment_method": {
+        "type": "credit_card",
+        "last4": "1121",
+        "brand": "mastercard"
+      },
+      "sender": {
+        "name": "Max Fischer",
+        "account_id": "acc_132"
+      },
+      "receiver": {
+        "name": "Local Cafe",
+        "account_id": "acc_499"
+      },
+      "fees": {
+        "processing_fee": 0.25,
+        "currency": "EUR"
+      },
+      "metadata": {
+        "order_id": "ord_045",
+        "customer_id": "cust_010",
+        "failure_reason": "Insufficient funds"
+      }
+    },
+    {
+      "id": "txn_046",
+      "amount": 220,
+      "currency": "CHF",
+      "status": "completed",
+      "timestamp": "2025-04-10T09:00:00Z",
+      "description": "Train Ticket SBB",
+      "merchant": {
+        "name": "SBB",
+        "id": "mcht_046"
+      },
+      "payment_method": {
+        "type": "credit_card",
+        "last4": "4321",
+        "brand": "visa"
+      },
+      "sender": {
+        "name": "Sophie Keller",
+        "account_id": "acc_131"
+      },
+      "receiver": {
+        "name": "SBB",
+        "account_id": "acc_500"
+      },
+      "fees": {
+        "processing_fee": 4.4,
+        "currency": "CHF"
+      },
+      "metadata": {
+        "order_id": "ord_046",
+        "customer_id": "cust_009"
+      }
+    },
+    {
+      "id": "txn_047",
+      "amount": 49,
+      "currency": "EUR",
+      "status": "completed",
+      "timestamp": "2025-06-01T00:00:00Z",
+      "description": "Deutschland-Ticket",
+      "merchant": {
+        "name": "BVG",
+        "id": "mcht_047"
+      },
+      "payment_method": {
+        "type": "bank_transfer",
+        "iban_last4": "DE77"
+      },
+      "sender": {
+        "name": "Anna Wagner",
+        "account_id": "acc_129"
+      },
+      "receiver": {
+        "name": "BVG",
+        "account_id": "acc_501"
+      },
+      "fees": {
+        "processing_fee": 0,
+        "currency": "EUR"
+      },
+      "metadata": {
+        "order_id": "ord_047",
+        "customer_id": "cust_007",
+        "subscription_id": "D-TICKET"
+      }
+    },
+    {
+      "id": "txn_048",
+      "amount": 18,
+      "currency": "EUR",
+      "status": "pending",
+      "timestamp": "2025-06-16T10:00:00Z",
+      "description": "Pharmacy",
+      "merchant": {
+        "name": "Apotheke am Zoo",
+        "id": "mcht_048"
+      },
+      "payment_method": {
+        "type": "debit_card",
+        "last4": "1234",
+        "brand": "maestro"
+      },
+      "sender": {
+        "name": "Klaus Müller",
+        "account_id": "acc_127"
+      },
+      "receiver": {
+        "name": "Apotheke am Zoo",
+        "account_id": "acc_502"
+      },
+      "fees": {
+        "processing_fee": 0,
+        "currency": "EUR"
+      },
+      "metadata": {
+        "order_id": "ord_048",
+        "customer_id": "cust_005"
+      }
+    },
+    {
+      "id": "txn_049",
+      "amount": 5.99,
+      "currency": "USD",
+      "status": "completed",
+      "timestamp": "2025-05-25T15:00:00Z",
+      "description": "Domain Renewal",
+      "merchant": {
+        "name": "GoDaddy",
+        "id": "mcht_049"
+      },
+      "payment_method": {
+        "type": "paypal",
+        "email": "ali.r@example.com"
+      },
+      "sender": {
+        "name": "Ali Reza",
+        "account_id": "acc_123"
+      },
+      "receiver": {
+        "name": "GoDaddy",
+        "account_id": "acc_503"
+      },
+      "fees": {
+        "processing_fee": 0.1,
+        "currency": "USD"
+      },
+      "metadata": {
+        "order_id": "ord_049",
+        "customer_id": "cust_001",
+        "domain_name": "my-cool-site.com"
+      }
+    },
+    {
+      "id": "txn_050",
+      "amount": 950,
+      "currency": "GBP",
+      "status": "failed",
+      "timestamp": "2025-06-04T16:00:00Z",
+      "description": "Hotel in Scotland",
+      "merchant": {
+        "name": "Highland Resorts",
+        "id": "mcht_050"
+      },
+      "payment_method": {
+        "type": "credit_card",
+        "last4": "5555",
+        "brand": "mastercard"
+      },
+      "sender": {
+        "name": "Ben Schmidt",
+        "account_id": "acc_125"
+      },
+      "receiver": {
+        "name": "Highland Resorts",
+        "account_id": "acc_504"
+      },
+      "fees": {
+        "processing_fee": 19,
+        "currency": "GBP"
+      },
+      "metadata": {
+        "order_id": "ord_050",
+        "customer_id": "cust_003",
+        "failure_reason": "Card reported lost"
+      }
+    },
+    {
+      "id": "txn_051",
+      "amount": 12.5,
+      "currency": "EUR",
+      "status": "completed",
+      "timestamp": "2025-01-20T08:30:00Z",
+      "description": "Bakery Purchase",
+      "merchant": {
+        "name": "Kamps",
+        "id": "mcht_051"
+      },
+      "payment_method": {
+        "type": "debit_card",
+        "last4": "6789",
+        "brand": "girocard"
+      },
+      "sender": {
+        "name": "Lars Weber",
+        "account_id": "acc_138"
+      },
+      "receiver": {
+        "name": "Kamps",
+        "account_id": "acc_505"
+      },
+      "fees": {
+        "processing_fee": 0,
+        "currency": "EUR"
+      },
+      "metadata": {
+        "order_id": "ord_051",
+        "customer_id": "cust_016"
+      }
+    },
+    {
+      "id": "txn_052",
+      "amount": 2500,
+      "currency": "USD",
+      "status": "pending",
+      "timestamp": "2025-06-17T10:00:00Z",
+      "description": "Business Equipment Lease",
+      "merchant": {
+        "name": "Office Leasing Co.",
+        "id": "mcht_052"
+      },
+      "payment_method": {
+        "type": "bank_transfer",
+        "iban_last4": "US12"
+      },
+      "sender": {
+        "name": "Creative Solutions LLC",
+        "account_id": "acc_139"
+      },
+      "receiver": {
+        "name": "Office Leasing Co.",
+        "account_id": "acc_506"
+      },
+      "fees": {
+        "processing_fee": 5,
+        "currency": "USD"
+      },
+      "metadata": {
+        "order_id": "ord_052",
+        "customer_id": "cust_017",
+        "lease_id": "L-789"
+      }
+    },
+    {
+      "id": "txn_053",
+      "amount": 89.9,
+      "currency": "GBP",
+      "status": "completed",
+      "timestamp": "2025-03-15T14:45:00Z",
+      "description": "Tesco Online Shopping",
+      "merchant": {
+        "name": "Tesco",
+        "id": "mcht_053"
+      },
+      "payment_method": {
+        "type": "credit_card",
+        "last4": "3456",
+        "brand": "visa"
+      },
+      "sender": {
+        "name": "Emily Jones",
+        "account_id": "acc_140"
+      },
+      "receiver": {
+        "name": "Tesco",
+        "account_id": "acc_507"
+      },
+      "fees": {
+        "processing_fee": 1.8,
+        "currency": "GBP"
+      },
+      "metadata": {
+        "order_id": "ord_053",
+        "customer_id": "cust_018"
+      }
+    },
+    {
+      "id": "txn_054",
+      "amount": 150,
+      "currency": "CHF",
+      "status": "completed",
+      "timestamp": "2025-04-22T19:00:00Z",
+      "description": "Dinner at a fine restaurant",
+      "merchant": {
+        "name": "Le Gourmet",
+        "id": "mcht_054"
+      },
+      "payment_method": {
+        "type": "credit_card",
+        "last4": "7890",
+        "brand": "amex"
+      },
+      "sender": {
+        "name": "Pierre Dubois",
+        "account_id": "acc_141"
+      },
+      "receiver": {
+        "name": "Le Gourmet",
+        "account_id": "acc_508"
+      },
+      "fees": {
+        "processing_fee": 3,
+        "currency": "CHF"
+      },
+      "metadata": {
+        "order_id": "ord_054",
+        "customer_id": "cust_019"
+      }
+    },
+    {
+      "id": "txn_055",
+      "amount": 42,
+      "currency": "USD",
+      "status": "completed",
+      "timestamp": "2025-05-10T11:20:00Z",
+      "description": "Lyft Ride",
+      "merchant": {
+        "name": "Lyft",
+        "id": "mcht_055"
+      },
+      "payment_method": {
+        "type": "paypal",
+        "email": "creative.solutions@example.com"
+      },
+      "sender": {
+        "name": "Creative Solutions LLC",
+        "account_id": "acc_139"
+      },
+      "receiver": {
+        "name": "Lyft",
+        "account_id": "acc_509"
+      },
+      "fees": {
+        "processing_fee": 0.84,
+        "currency": "USD"
+      },
+      "metadata": {
+        "order_id": "ord_055",
+        "customer_id": "cust_017"
+      }
+    },
+    {
+      "id": "txn_056",
+      "amount": 600,
+      "currency": "JPY",
+      "status": "failed",
+      "timestamp": "2025-06-12T03:00:00Z",
+      "description": "Rakuten Purchase",
+      "merchant": {
+        "name": "Rakuten",
+        "id": "mcht_056"
+      },
+      "payment_method": {
+        "type": "credit_card",
+        "last4": "2345",
+        "brand": "jcb"
+      },
+      "sender": {
+        "name": "Haruto Sato",
+        "account_id": "acc_142"
+      },
+      "receiver": {
+        "name": "Rakuten",
+        "account_id": "acc_510"
+      },
+      "fees": {
+        "processing_fee": 12,
+        "currency": "JPY"
+      },
+      "metadata": {
+        "order_id": "ord_056",
+        "customer_id": "cust_020",
+        "failure_reason": "Network error"
+      }
+    },
+    {
+      "id": "txn_057",
+      "amount": 75,
+      "currency": "EUR",
+      "status": "completed",
+      "timestamp": "2024-11-30T17:00:00Z",
+      "description": "Thalia Bookstore",
+      "merchant": {
+        "name": "Thalia",
+        "id": "mcht_057"
+      },
+      "payment_method": {
+        "type": "debit_card",
+        "last4": "9012",
+        "brand": "maestro"
+      },
+      "sender": {
+        "name": "Anke Engel",
+        "account_id": "acc_143"
+      },
+      "receiver": {
+        "name": "Thalia",
+        "account_id": "acc_511"
+      },
+      "fees": {
+        "processing_fee": 0,
+        "currency": "EUR"
+      },
+      "metadata": {
+        "order_id": "ord_057",
+        "customer_id": "cust_021"
+      }
+    },
+    {
+      "id": "txn_058",
+      "amount": 110.25,
+      "currency": "USD",
+      "status": "completed",
+      "timestamp": "2025-02-14T20:15:00Z",
+      "description": "Valentine's Day Dinner",
+      "merchant": {
+        "name": "The Romantic Corner",
+        "id": "mcht_058"
+      },
+      "payment_method": {
+        "type": "credit_card",
+        "last4": "4567",
+        "brand": "mastercard"
+      },
+      "sender": {
+        "name": "Liam Smith",
+        "account_id": "acc_144"
+      },
+      "receiver": {
+        "name": "The Romantic Corner",
+        "account_id": "acc_512"
+      },
+      "fees": {
+        "processing_fee": 2.21,
+        "currency": "USD"
+      },
+      "metadata": {
+        "order_id": "ord_058",
+        "customer_id": "cust_022"
+      }
+    },
+    {
+      "id": "txn_059",
+      "amount": 19.99,
+      "currency": "EUR",
+      "status": "pending",
+      "timestamp": "2025-06-18T09:00:00Z",
+      "description": "Software License Renewal",
+      "merchant": {
+        "name": "JetBrains",
+        "id": "mcht_059"
+      },
+      "payment_method": {
+        "type": "paypal",
+        "email": "dev.team@example.com"
+      },
+      "sender": {
+        "name": "Dev Team",
+        "account_id": "acc_145"
+      },
+      "receiver": {
+        "name": "JetBrains",
+        "account_id": "acc_513"
+      },
+      "fees": {
+        "processing_fee": 0.4,
+        "currency": "EUR"
+      },
+      "metadata": {
+        "order_id": "ord_059",
+        "customer_id": "cust_023"
+      }
+    },
+    {
+      "id": "txn_060",
+      "amount": 330,
+      "currency": "GBP",
+      "status": "completed",
+      "timestamp": "2025-04-01T10:00:00Z",
+      "description": "Council Tax Payment",
+      "merchant": {
+        "name": "City Council",
+        "id": "mcht_060"
+      },
+      "payment_method": {
+        "type": "bank_transfer",
+        "iban_last4": "GB12"
+      },
+      "sender": {
+        "name": "Olivia Brown",
+        "account_id": "acc_146"
+      },
+      "receiver": {
+        "name": "City Council",
+        "account_id": "acc_514"
+      },
+      "fees": {
+        "processing_fee": 0,
+        "currency": "GBP"
+      },
+      "metadata": {
+        "order_id": "ord_060",
+        "customer_id": "cust_024",
+        "reference": "CT-2025-Q2"
+      }
+    },
+    {
+      "id": "txn_061",
+      "amount": 28.4,
+      "currency": "CHF",
+      "status": "completed",
+      "timestamp": "2025-05-05T13:30:00Z",
+      "description": "Lunch at Migros",
+      "merchant": {
+        "name": "Migros",
+        "id": "mcht_061"
+      },
+      "payment_method": {
+        "type": "debit_card",
+        "last4": "5678",
+        "brand": "maestro"
+      },
+      "sender": {
+        "name": "Luca Martin",
+        "account_id": "acc_147"
+      },
+      "receiver": {
+        "name": "Migros",
+        "account_id": "acc_515"
+      },
+      "fees": {
+        "processing_fee": 0,
+        "currency": "CHF"
+      },
+      "metadata": {
+        "order_id": "ord_061",
+        "customer_id": "cust_025"
+      }
+    },
+    {
+      "id": "txn_062",
+      "amount": 1200,
+      "currency": "USD",
+      "status": "failed",
+      "timestamp": "2025-06-13T16:45:00Z",
+      "description": "Dell Laptop",
+      "merchant": {
+        "name": "Dell Inc.",
+        "id": "mcht_062"
+      },
+      "payment_method": {
+        "type": "credit_card",
+        "last4": "8901",
+        "brand": "visa"
+      },
+      "sender": {
+        "name": "Isabella Garcia",
+        "account_id": "acc_148"
+      },
+      "receiver": {
+        "name": "Dell Inc.",
+        "account_id": "acc_516"
+      },
+      "fees": {
+        "processing_fee": 24,
+        "currency": "USD"
+      },
+      "metadata": {
+        "order_id": "ord_062",
+        "customer_id": "cust_026",
+        "failure_reason": "AVS mismatch"
+      }
+    },
+    {
+      "id": "txn_063",
+      "amount": 95,
+      "currency": "EUR",
+      "status": "completed",
+      "timestamp": "2025-01-05T21:00:00Z",
+      "description": "Concert Tickets - Rock Band",
+      "merchant": {
+        "name": "Eventim",
+        "id": "mcht_063"
+      },
+      "payment_method": {
+        "type": "paypal",
+        "email": "rockfan@example.com"
+      },
+      "sender": {
+        "name": "Finn Wagner",
+        "account_id": "acc_149"
+      },
+      "receiver": {
+        "name": "Eventim",
+        "account_id": "acc_517"
+      },
+      "fees": {
+        "processing_fee": 1.9,
+        "currency": "EUR"
+      },
+      "metadata": {
+        "order_id": "ord_063",
+        "customer_id": "cust_027"
+      }
+    },
+    {
+      "id": "txn_064",
+      "amount": 18.99,
+      "currency": "USD",
+      "status": "completed",
+      "timestamp": "2025-03-01T00:00:00Z",
+      "description": "Adobe Creative Cloud",
+      "merchant": {
+        "name": "Adobe",
+        "id": "mcht_064"
+      },
+      "payment_method": {
+        "type": "credit_card",
+        "last4": "9012",
+        "brand": "amex"
+      },
+      "sender": {
+        "name": "Chloe Walker",
+        "account_id": "acc_150"
+      },
+      "receiver": {
+        "name": "Adobe",
+        "account_id": "acc_518"
+      },
+      "fees": {
+        "processing_fee": 0.38,
+        "currency": "USD"
+      },
+      "metadata": {
+        "order_id": "ord_064",
+        "customer_id": "cust_028"
+      }
+    },
+    {
+      "id": "txn_065",
+      "amount": 450,
+      "currency": "GBP",
+      "status": "pending",
+      "timestamp": "2025-06-19T14:00:00Z",
+      "description": "Deposit for Venue Hire",
+      "merchant": {
+        "name": "The Grand Hall",
+        "id": "mcht_065"
+      },
+      "payment_method": {
+        "type": "bank_transfer",
+        "iban_last4": "GB34"
+      },
+      "sender": {
+        "name": "Noah Taylor",
+        "account_id": "acc_151"
+      },
+      "receiver": {
+        "name": "The Grand Hall",
+        "account_id": "acc_519"
+      },
+      "fees": {
+        "processing_fee": 0,
+        "currency": "GBP"
+      },
+      "metadata": {
+        "order_id": "ord_065",
+        "customer_id": "cust_029",
+        "event_date": "2025-09-15"
+      }
+    },
+    {
+      "id": "txn_066",
+      "amount": 3.5,
+      "currency": "EUR",
+      "status": "completed",
+      "timestamp": "2025-04-18T09:10:00Z",
+      "description": "Pretzel",
+      "merchant": {
+        "name": "Ditsch",
+        "id": "mcht_066"
+      },
+      "payment_method": {
+        "type": "debit_card",
+        "last4": "0123",
+        "brand": "maestro"
+      },
+      "sender": {
+        "name": "Mia Schmidt",
+        "account_id": "acc_152"
+      },
+      "receiver": {
+        "name": "Ditsch",
+        "account_id": "acc_520"
+      },
+      "fees": {
+        "processing_fee": 0,
+        "currency": "EUR"
+      },
+      "metadata": {
+        "order_id": "ord_066",
+        "customer_id": "cust_030"
+      }
+    },
+    {
+      "id": "txn_067",
+      "amount": 850,
+      "currency": "EUR",
+      "status": "completed",
+      "timestamp": "2024-10-10T11:00:00Z",
+      "description": "New Television",
+      "merchant": {
+        "name": "MediaMarkt",
+        "id": "mcht_013"
+      },
+      "payment_method": {
+        "type": "credit_card",
+        "last4": "1234",
+        "brand": "visa"
+      },
+      "sender": {
+        "name": "Leon Schulz",
+        "account_id": "acc_153"
+      },
+      "receiver": {
+        "name": "MediaMarkt",
+        "account_id": "acc_468"
+      },
+      "fees": {
+        "processing_fee": 17,
+        "currency": "EUR"
+      },
+      "metadata": {
+        "order_id": "ord_067",
+        "customer_id": "cust_031"
+      }
+    },
+    {
+      "id": "txn_068",
+      "amount": 29,
+      "currency": "USD",
+      "status": "completed",
+      "timestamp": "2025-05-20T17:00:00Z",
+      "description": "Udemy Course",
+      "merchant": {
+        "name": "Udemy",
+        "id": "mcht_068"
+      },
+      "payment_method": {
+        "type": "paypal",
+        "email": "student1@example.com"
+      },
+      "sender": {
+        "name": "Sofia Rossi",
+        "account_id": "acc_154"
+      },
+      "receiver": {
+        "name": "Udemy",
+        "account_id": "acc_522"
+      },
+      "fees": {
+        "processing_fee": 0.58,
+        "currency": "USD"
+      },
+      "metadata": {
+        "order_id": "ord_068",
+        "customer_id": "cust_032"
+      }
+    },
+    {
+      "id": "txn_069",
+      "amount": 35.5,
+      "currency": "CAD",
+      "status": "completed",
+      "timestamp": "2025-06-01T12:30:00Z",
+      "description": "Tim Hortons Run",
+      "merchant": {
+        "name": "Tim Hortons",
+        "id": "mcht_069"
+      },
+      "payment_method": {
+        "type": "debit_card",
+        "last4": "4567",
+        "brand": "interac"
+      },
+      "sender": {
+        "name": "Ethan Tremblay",
+        "account_id": "acc_155"
+      },
+      "receiver": {
+        "name": "Tim Hortons",
+        "account_id": "acc_523"
+      },
+      "fees": {
+        "processing_fee": 0,
+        "currency": "CAD"
+      },
+      "metadata": {
+        "order_id": "ord_069",
+        "customer_id": "cust_033"
+      }
+    },
+    {
+      "id": "txn_070",
+      "amount": 199.99,
+      "currency": "AUD",
+      "status": "pending",
+      "timestamp": "2025-06-20T10:00:00Z",
+      "description": "JB Hi-Fi Order",
+      "merchant": {
+        "name": "JB Hi-Fi",
+        "id": "mcht_070"
+      },
+      "payment_method": {
+        "type": "credit_card",
+        "last4": "5678",
+        "brand": "mastercard"
+      },
+      "sender": {
+        "name": "Charlotte Wilson",
+        "account_id": "acc_156"
+      },
+      "receiver": {
+        "name": "JB Hi-Fi",
+        "account_id": "acc_524"
+      },
+      "fees": {
+        "processing_fee": 4,
+        "currency": "AUD"
+      },
+      "metadata": {
+        "order_id": "ord_070",
+        "customer_id": "cust_034"
+      }
+    },
+    {
+      "id": "txn_071",
+      "amount": 12,
+      "currency": "EUR",
+      "status": "completed",
+      "timestamp": "2025-02-02T15:00:00Z",
+      "description": "Museum Entry",
+      "merchant": {
+        "name": "Pergamon Museum",
+        "id": "mcht_071"
+      },
+      "payment_method": {
+        "type": "debit_card",
+        "last4": "1234",
+        "brand": "girocard"
+      },
+      "sender": {
+        "name": "Hannah Ziegler",
+        "account_id": "acc_157"
+      },
+      "receiver": {
+        "name": "Pergamon Museum",
+        "account_id": "acc_525"
+      },
+      "fees": {
+        "processing_fee": 0,
+        "currency": "EUR"
+      },
+      "metadata": {
+        "order_id": "ord_071",
+        "customer_id": "cust_035"
+      }
+    },
+    {
+      "id": "txn_072",
+      "amount": 55,
+      "currency": "GBP",
+      "status": "failed",
+      "timestamp": "2025-06-10T19:00:00Z",
+      "description": "Trainline Ticket",
+      "merchant": {
+        "name": "Trainline",
+        "id": "mcht_072"
+      },
+      "payment_method": {
+        "type": "credit_card",
+        "last4": "7890",
+        "brand": "visa"
+      },
+      "sender": {
+        "name": "James Evans",
+        "account_id": "acc_158"
+      },
+      "receiver": {
+        "name": "Trainline",
+        "account_id": "acc_526"
+      },
+      "fees": {
+        "processing_fee": 1.1,
+        "currency": "GBP"
+      },
+      "metadata": {
+        "order_id": "ord_072",
+        "customer_id": "cust_036",
+        "failure_reason": "Expired card"
+      }
+    },
+    {
+      "id": "txn_073",
+      "amount": 3.2,
+      "currency": "EUR",
+      "status": "completed",
+      "timestamp": "2025-05-19T08:00:00Z",
+      "description": "Public transport ticket",
+      "merchant": {
+        "name": "BVG",
+        "id": "mcht_047"
+      },
+      "payment_method": {
+        "type": "paypal",
+        "email": "berliner@example.com"
+      },
+      "sender": {
+        "name": "Jonas Meyer",
+        "account_id": "acc_159"
+      },
+      "receiver": {
+        "name": "BVG",
+        "account_id": "acc_501"
+      },
+      "fees": {
+        "processing_fee": 0,
+        "currency": "EUR"
+      },
+      "metadata": {
+        "order_id": "ord_073",
+        "customer_id": "cust_037"
+      }
+    },
+    {
+      "id": "txn_074",
+      "amount": 140.5,
+      "currency": "USD",
+      "status": "completed",
+      "timestamp": "2025-04-25T16:20:00Z",
+      "description": "Sephora Haul",
+      "merchant": {
+        "name": "Sephora",
+        "id": "mcht_074"
+      },
+      "payment_method": {
+        "type": "credit_card",
+        "last4": "2345",
+        "brand": "amex"
+      },
+      "sender": {
+        "name": "Ava Martinez",
+        "account_id": "acc_160"
+      },
+      "receiver": {
+        "name": "Sephora",
+        "account_id": "acc_528"
+      },
+      "fees": {
+        "processing_fee": 2.81,
+        "currency": "USD"
+      },
+      "metadata": {
+        "order_id": "ord_074",
+        "customer_id": "cust_038"
+      }
+    },
+    {
+      "id": "txn_075",
+      "amount": 68,
+      "currency": "EUR",
+      "status": "completed",
+      "timestamp": "2025-03-28T18:45:00Z",
+      "description": "Lidl Groceries",
+      "merchant": {
+        "name": "Lidl",
+        "id": "mcht_075"
+      },
+      "payment_method": {
+        "type": "debit_card",
+        "last4": "3456",
+        "brand": "maestro"
+      },
+      "sender": {
+        "name": "Elias Huber",
+        "account_id": "acc_161"
+      },
+      "receiver": {
+        "name": "Lidl",
+        "account_id": "acc_529"
+      },
+      "fees": {
+        "processing_fee": 0,
+        "currency": "EUR"
+      },
+      "metadata": {
+        "order_id": "ord_075",
+        "customer_id": "cust_039"
+      }
+    },
+    {
+      "id": "txn_076",
+      "amount": 88,
+      "currency": "JPY",
+      "status": "completed",
+      "timestamp": "2025-06-05T10:00:00Z",
+      "description": "Uniqlo Clothing",
+      "merchant": {
+        "name": "Uniqlo",
+        "id": "mcht_076"
+      },
+      "payment_method": {
+        "type": "credit_card",
+        "last4": "6789",
+        "brand": "jcb"
+      },
+      "sender": {
+        "name": "Rin Kobayashi",
+        "account_id": "acc_162"
+      },
+      "receiver": {
+        "name": "Uniqlo",
+        "account_id": "acc_530"
+      },
+      "fees": {
+        "processing_fee": 1.76,
+        "currency": "JPY"
+      },
+      "metadata": {
+        "order_id": "ord_076",
+        "customer_id": "cust_040"
+      }
+    },
+    {
+      "id": "txn_077",
+      "amount": 10,
+      "currency": "USD",
+      "status": "pending",
+      "timestamp": "2025-06-21T11:00:00Z",
+      "description": "Patreon Subscription",
+      "merchant": {
+        "name": "Patreon",
+        "id": "mcht_077"
+      },
+      "payment_method": {
+        "type": "paypal",
+        "email": "supporter@example.com"
+      },
+      "sender": {
+        "name": "Oliver Lee",
+        "account_id": "acc_163"
+      },
+      "receiver": {
+        "name": "Patreon",
+        "account_id": "acc_531"
+      },
+      "fees": {
+        "processing_fee": 0.2,
+        "currency": "USD"
+      },
+      "metadata": {
+        "order_id": "ord_077",
+        "customer_id": "cust_041",
+        "creator_id": "creator_xyz"
+      }
+    },
+    {
+      "id": "txn_078",
+      "amount": 320,
+      "currency": "EUR",
+      "status": "completed",
+      "timestamp": "2025-02-28T14:00:00Z",
+      "description": "Ryanair Flight to Dublin",
+      "merchant": {
+        "name": "Ryanair",
+        "id": "mcht_078"
+      },
+      "payment_method": {
+        "type": "credit_card",
+        "last4": "7890",
+        "brand": "mastercard"
+      },
+      "sender": {
+        "name": "Paul Richter",
+        "account_id": "acc_164"
+      },
+      "receiver": {
+        "name": "Ryanair",
+        "account_id": "acc_532"
+      },
+      "fees": {
+        "processing_fee": 6.4,
+        "currency": "EUR"
+      },
+      "metadata": {
+        "order_id": "ord_078",
+        "customer_id": "cust_042"
+      }
+    },
+    {
+      "id": "txn_079",
+      "amount": 42.5,
+      "currency": "GBP",
+      "status": "completed",
+      "timestamp": "2025-05-12T13:00:00Z",
+      "description": "Marks & Spencer Food",
+      "merchant": {
+        "name": "Marks & Spencer",
+        "id": "mcht_079"
+      },
+      "payment_method": {
+        "type": "debit_card",
+        "last4": "8901",
+        "brand": "visa_debit"
+      },
+      "sender": {
+        "name": "Sophie Clark",
+        "account_id": "acc_165"
+      },
+      "receiver": {
+        "name": "Marks & Spencer",
+        "account_id": "acc_533"
+      },
+      "fees": {
+        "processing_fee": 0,
+        "currency": "GBP"
+      },
+      "metadata": {
+        "order_id": "ord_079",
+        "customer_id": "cust_043"
+      }
+    },
+    {
+      "id": "txn_080",
+      "amount": 5,
+      "currency": "EUR",
+      "status": "failed",
+      "timestamp": "2025-06-11T12:00:00Z",
+      "description": "Parking Fee",
+      "merchant": {
+        "name": "ParkNow",
+        "id": "mcht_080"
+      },
+      "payment_method": {
+        "type": "credit_card",
+        "last4": "9012",
+        "brand": "amex"
+      },
+      "sender": {
+        "name": "Matteo Moretti",
+        "account_id": "acc_166"
+      },
+      "receiver": {
+        "name": "ParkNow",
+        "account_id": "acc_534"
+      },
+      "fees": {
+        "processing_fee": 0.1,
+        "currency": "EUR"
+      },
+      "metadata": {
+        "order_id": "ord_080",
+        "customer_id": "cust_044",
+        "failure_reason": "Technical error"
+      }
+    },
+    {
+      "id": "txn_081",
+      "amount": 780,
+      "currency": "CHF",
+      "status": "completed",
+      "timestamp": "2025-03-10T15:00:00Z",
+      "description": "Monthly Rent",
+      "merchant": {
+        "name": "Swiss Real Estate",
+        "id": "mcht_081"
+      },
+      "payment_method": {
+        "type": "bank_transfer",
+        "iban_last4": "CH12"
+      },
+      "sender": {
+        "name": "Emma Fischer",
+        "account_id": "acc_167"
+      },
+      "receiver": {
+        "name": "Swiss Real Estate",
+        "account_id": "acc_535"
+      },
+      "fees": {
+        "processing_fee": 0,
+        "currency": "CHF"
+      },
+      "metadata": {
+        "order_id": "ord_081",
+        "customer_id": "cust_045"
+      }
+    },
+    {
+      "id": "txn_082",
+      "amount": 19.5,
+      "currency": "USD",
+      "status": "completed",
+      "timestamp": "2025-06-03T18:00:00Z",
+      "description": "Etsy Craft Supply",
+      "merchant": {
+        "name": "Etsy",
+        "id": "mcht_082"
+      },
+      "payment_method": {
+        "type": "paypal",
+        "email": "crafter@example.com"
+      },
+      "sender": {
+        "name": "Grace Kim",
+        "account_id": "acc_168"
+      },
+      "receiver": {
+        "name": "Etsy",
+        "account_id": "acc_536"
+      },
+      "fees": {
+        "processing_fee": 0.39,
+        "currency": "USD"
+      },
+      "metadata": {
+        "order_id": "ord_082",
+        "customer_id": "cust_046"
+      }
+    },
+    {
+      "id": "txn_083",
+      "amount": 2200,
+      "currency": "EUR",
+      "status": "pending",
+      "timestamp": "2025-06-22T10:00:00Z",
+      "description": "Holiday Package to Greece",
+      "merchant": {
+        "name": "TUI",
+        "id": "mcht_083"
+      },
+      "payment_method": {
+        "type": "bank_transfer",
+        "iban_last4": "DE66"
+      },
+      "sender": {
+        "name": "Felix Neumann",
+        "account_id": "acc_169"
+      },
+      "receiver": {
+        "name": "TUI",
+        "account_id": "acc_537"
+      },
+      "fees": {
+        "processing_fee": 0,
+        "currency": "EUR"
+      },
+      "metadata": {
+        "order_id": "ord_083",
+        "customer_id": "cust_047"
+      }
+    },
+    {
+      "id": "txn_084",
+      "amount": 9.95,
+      "currency": "EUR",
+      "status": "completed",
+      "timestamp": "2025-04-01T10:00:00Z",
+      "description": "Web hosting",
+      "merchant": {
+        "name": "Hetzner Online GmbH",
+        "id": "mcht_084"
+      },
+      "payment_method": {
+        "type": "credit_card",
+        "last4": "0123",
+        "brand": "visa"
+      },
+      "sender": {
+        "name": "David Berger",
+        "account_id": "acc_170"
+      },
+      "receiver": {
+        "name": "Hetzner Online GmbH",
+        "account_id": "acc_538"
+      },
+      "fees": {
+        "processing_fee": 0.2,
+        "currency": "EUR"
+      },
+      "metadata": {
+        "order_id": "ord_084",
+        "customer_id": "cust_048"
+      }
+    },
+    {
+      "id": "txn_085",
+      "amount": 145,
+      "currency": "GBP",
+      "status": "completed",
+      "timestamp": "2025-05-24T14:30:00Z",
+      "description": "Weekend Spa Day",
+      "merchant": {
+        "name": "Serenity Spa",
+        "id": "mcht_085"
+      },
+      "payment_method": {
+        "type": "credit_card",
+        "last4": "1234",
+        "brand": "amex"
+      },
+      "sender": {
+        "name": "Isla Wright",
+        "account_id": "acc_171"
+      },
+      "receiver": {
+        "name": "Serenity Spa",
+        "account_id": "acc_539"
+      },
+      "fees": {
+        "processing_fee": 2.9,
+        "currency": "GBP"
+      },
+      "metadata": {
+        "order_id": "ord_085",
+        "customer_id": "cust_049"
+      }
+    },
+    {
+      "id": "txn_086",
+      "amount": 65,
+      "currency": "USD",
+      "status": "failed",
+      "timestamp": "2025-06-13T12:00:00Z",
+      "description": "Flower Delivery",
+      "merchant": {
+        "name": "1-800-Flowers",
+        "id": "mcht_086"
+      },
+      "payment_method": {
+        "type": "credit_card",
+        "last4": "2345",
+        "brand": "mastercard"
+      },
+      "sender": {
+        "name": "Mason Scott",
+        "account_id": "acc_172"
+      },
+      "receiver": {
+        "name": "1-800-Flowers",
+        "account_id": "acc_540"
+      },
+      "fees": {
+        "processing_fee": 1.3,
+        "currency": "USD"
+      },
+      "metadata": {
+        "order_id": "ord_086",
+        "customer_id": "cust_050",
+        "failure_reason": "Incorrect CVC"
+      }
+    },
+    {
+      "id": "txn_087",
+      "amount": 15,
+      "currency": "EUR",
+      "status": "completed",
+      "timestamp": "2025-02-18T19:00:00Z",
+      "description": "Bowling with friends",
+      "merchant": {
+        "name": "Super-Bowl Center",
+        "id": "mcht_087"
+      },
+      "payment_method": {
+        "type": "debit_card",
+        "last4": "4567",
+        "brand": "maestro"
+      },
+      "sender": {
+        "name": "Laura Keller",
+        "account_id": "acc_173"
+      },
+      "receiver": {
+        "name": "Super-Bowl Center",
+        "account_id": "acc_541"
+      },
+      "fees": {
+        "processing_fee": 0,
+        "currency": "EUR"
+      },
+      "metadata": {
+        "order_id": "ord_087",
+        "customer_id": "cust_051"
+      }
+    },
+    {
+      "id": "txn_088",
+      "amount": 99.99,
+      "currency": "CAD",
+      "status": "completed",
+      "timestamp": "2025-04-12T11:00:00Z",
+      "description": "New Video Game",
+      "merchant": {
+        "name": "EB Games",
+        "id": "mcht_088"
+      },
+      "payment_method": {
+        "type": "credit_card",
+        "last4": "5678",
+        "brand": "visa"
+      },
+      "sender": {
+        "name": "Logan Roy",
+        "account_id": "acc_174"
+      },
+      "receiver": {
+        "name": "EB Games",
+        "account_id": "acc_542"
+      },
+      "fees": {
+        "processing_fee": 2,
+        "currency": "CAD"
+      },
+      "metadata": {
+        "order_id": "ord_088",
+        "customer_id": "cust_052"
+      }
+    },
+    {
+      "id": "txn_089",
+      "amount": 7.5,
+      "currency": "EUR",
+      "status": "completed",
+      "timestamp": "2025-06-08T14:00:00Z",
+      "description": "Ice Cream",
+      "merchant": {
+        "name": "Eiscafe Venezia",
+        "id": "mcht_089"
+      },
+      "payment_method": {
+        "type": "debit_card",
+        "last4": "6789",
+        "brand": "girocard"
+      },
+      "sender": {
+        "name": "Clara Braun",
+        "account_id": "acc_175"
+      },
+      "receiver": {
+        "name": "Eiscafe Venezia",
+        "account_id": "acc_543"
+      },
+      "fees": {
+        "processing_fee": 0,
+        "currency": "EUR"
+      },
+      "metadata": {
+        "order_id": "ord_089",
+        "customer_id": "cust_053"
+      }
+    },
+    {
+      "id": "txn_090",
+      "amount": 1800,
+      "currency": "EUR",
+      "status": "pending",
+      "timestamp": "2025-06-25T09:00:00Z",
+      "description": "Tuition Fee Payment",
+      "merchant": {
+        "name": "Technical University Munich",
+        "id": "mcht_090"
+      },
+      "payment_method": {
+        "type": "bank_transfer",
+        "iban_last4": "DE88"
+      },
+      "sender": {
+        "name": "Mohammed Al-Fayed",
+        "account_id": "acc_176"
+      },
+      "receiver": {
+        "name": "Technical University Munich",
+        "account_id": "acc_544"
+      },
+      "fees": {
+        "processing_fee": 0,
+        "currency": "EUR"
+      },
+      "metadata": {
+        "order_id": "ord_090",
+        "customer_id": "cust_054",
+        "student_id": "S-987654"
+      }
+    },
+    {
+      "id": "txn_091",
+      "amount": 59.99,
+      "currency": "USD",
+      "status": "completed",
+      "timestamp": "2024-11-15T12:00:00Z",
+      "description": "Costco Membership",
+      "merchant": {
+        "name": "Costco",
+        "id": "mcht_091"
+      },
+      "payment_method": {
+        "type": "credit_card",
+        "last4": "7890",
+        "brand": "visa"
+      },
+      "sender": {
+        "name": "Emily Carter",
+        "account_id": "acc_177"
+      },
+      "receiver": {
+        "name": "Costco",
+        "account_id": "acc_545"
+      },
+      "fees": {
+        "processing_fee": 1.2,
+        "currency": "USD"
+      },
+      "metadata": {
+        "order_id": "ord_091",
+        "customer_id": "cust_055"
+      }
+    },
+    {
+      "id": "txn_092",
+      "amount": 45,
+      "currency": "AUD",
+      "status": "completed",
+      "timestamp": "2025-02-22T20:00:00Z",
+      "description": "Cinema Tickets",
+      "merchant": {
+        "name": "Hoyts",
+        "id": "mcht_092"
+      },
+      "payment_method": {
+        "type": "debit_card",
+        "last4": "9012",
+        "brand": "visa_debit"
+      },
+      "sender": {
+        "name": "Jack Williams",
+        "account_id": "acc_178"
+      },
+      "receiver": {
+        "name": "Hoyts",
+        "account_id": "acc_546"
+      },
+      "fees": {
+        "processing_fee": 0,
+        "currency": "AUD"
+      },
+      "metadata": {
+        "order_id": "ord_092",
+        "customer_id": "cust_056"
+      }
+    },
+    {
+      "id": "txn_093",
+      "amount": 25,
+      "currency": "GBP",
+      "status": "failed",
+      "timestamp": "2025-06-14T15:00:00Z",
+      "description": "Book purchase",
+      "merchant": {
+        "name": "Waterstones",
+        "id": "mcht_093"
+      },
+      "payment_method": {
+        "type": "paypal",
+        "email": "reader@example.com"
+      },
+      "sender": {
+        "name": "Arthur Pendragon",
+        "account_id": "acc_179"
+      },
+      "receiver": {
+        "name": "Waterstones",
+        "account_id": "acc_547"
+      },
+      "fees": {
+        "processing_fee": 0.5,
+        "currency": "GBP"
+      },
+      "metadata": {
+        "order_id": "ord_093",
+        "customer_id": "cust_057",
+        "failure_reason": "PayPal account issue"
+      }
+    },
+    {
+      "id": "txn_094",
+      "amount": 120,
+      "currency": "EUR",
+      "status": "completed",
+      "timestamp": "2025-05-05T10:00:00Z",
+      "description": "Car Service",
+      "merchant": {
+        "name": "ATU",
+        "id": "mcht_094"
+      },
+      "payment_method": {
+        "type": "credit_card",
+        "last4": "0123",
+        "brand": "mastercard"
+      },
+      "sender": {
+        "name": "Moritz Wagner",
+        "account_id": "acc_180"
+      },
+      "receiver": {
+        "name": "ATU",
+        "account_id": "acc_548"
+      },
+      "fees": {
+        "processing_fee": 2.4,
+        "currency": "EUR"
+      },
+      "metadata": {
+        "order_id": "ord_094",
+        "customer_id": "cust_058"
+      }
+    },
+    {
+      "id": "txn_095",
+      "amount": 33,
+      "currency": "USD",
+      "status": "completed",
+      "timestamp": "2025-06-09T09:30:00Z",
+      "description": "Breakfast at IHOP",
+      "merchant": {
+        "name": "IHOP",
+        "id": "mcht_095"
+      },
+      "payment_method": {
+        "type": "debit_card",
+        "last4": "1234",
+        "brand": "visa_debit"
+      },
+      "sender": {
+        "name": "Henry Miller",
+        "account_id": "acc_181"
+      },
+      "receiver": {
+        "name": "IHOP",
+        "account_id": "acc_549"
+      },
+      "fees": {
+        "processing_fee": 0,
+        "currency": "USD"
+      },
+      "metadata": {
+        "order_id": "ord_095",
+        "customer_id": "cust_059"
+      }
+    },
+    {
+      "id": "txn_096",
+      "amount": 75,
+      "currency": "CHF",
+      "status": "pending",
+      "timestamp": "2025-06-24T18:00:00Z",
+      "description": "Coop Online Order",
+      "merchant": {
+        "name": "Coop",
+        "id": "mcht_096"
+      },
+      "payment_method": {
+        "type": "bank_transfer",
+        "iban_last4": "CH34"
+      },
+      "sender": {
+        "name": "Elena Bernard",
+        "account_id": "acc_182"
+      },
+      "receiver": {
+        "name": "Coop",
+        "account_id": "acc_550"
+      },
+      "fees": {
+        "processing_fee": 0,
+        "currency": "CHF"
+      },
+      "metadata": {
+        "order_id": "ord_096",
+        "customer_id": "cust_060"
+      }
+    },
+    {
+      "id": "txn_097",
+      "amount": 9,
+      "currency": "USD",
+      "status": "completed",
+      "timestamp": "2025-01-25T14:00:00Z",
+      "description": "Movie Rental",
+      "merchant": {
+        "name": "Apple iTunes",
+        "id": "mcht_097"
+      },
+      "payment_method": {
+        "type": "paypal",
+        "email": "movielover@example.com"
+      },
+      "sender": {
+        "name": "David Chen",
+        "account_id": "acc_183"
+      },
+      "receiver": {
+        "name": "Apple iTunes",
+        "account_id": "acc_551"
+      },
+      "fees": {
+        "processing_fee": 0.18,
+        "currency": "USD"
+      },
+      "metadata": {
+        "order_id": "ord_097",
+        "customer_id": "cust_061"
+      }
+    },
+    {
+      "id": "txn_098",
+      "amount": 550,
+      "currency": "EUR",
+      "status": "completed",
+      "timestamp": "2025-04-14T11:00:00Z",
+      "description": "Rimowa Luggage",
+      "merchant": {
+        "name": "Rimowa",
+        "id": "mcht_098"
+      },
+      "payment_method": {
+        "type": "credit_card",
+        "last4": "2345",
+        "brand": "amex"
+      },
+      "sender": {
+        "name": "Victoria Beck",
+        "account_id": "acc_184"
+      },
+      "receiver": {
+        "name": "Rimowa",
+        "account_id": "acc_552"
+      },
+      "fees": {
+        "processing_fee": 11,
+        "currency": "EUR"
+      },
+      "metadata": {
+        "order_id": "ord_098",
+        "customer_id": "cust_062"
+      }
+    },
+    {
+      "id": "txn_099",
+      "amount": 16.5,
+      "currency": "GBP",
+      "status": "completed",
+      "timestamp": "2025-05-16T12:45:00Z",
+      "description": "Pub Lunch",
+      "merchant": {
+        "name": "The King's Head",
+        "id": "mcht_099"
+      },
+      "payment_method": {
+        "type": "debit_card",
+        "last4": "3456",
+        "brand": "visa_debit"
+      },
+      "sender": {
+        "name": "George Harrison",
+        "account_id": "acc_185"
+      },
+      "receiver": {
+        "name": "The King's Head",
+        "account_id": "acc_553"
+      },
+      "fees": {
+        "processing_fee": 0,
+        "currency": "GBP"
+      },
+      "metadata": {
+        "order_id": "ord_099",
+        "customer_id": "cust_063"
+      }
+    },
+    {
+      "id": "txn_100",
+      "amount": 25000,
+      "currency": "JPY",
+      "status": "failed",
+      "timestamp": "2025-06-15T10:00:00Z",
+      "description": "Camera Equipment",
+      "merchant": {
+        "name": "Yodobashi Camera",
+        "id": "mcht_100"
+      },
+      "payment_method": {
+        "type": "credit_card",
+        "last4": "4567",
+        "brand": "mastercard"
+      },
+      "sender": {
+        "name": "Ken Tanaka",
+        "account_id": "acc_186"
+      },
+      "receiver": {
+        "name": "Yodobashi Camera",
+        "account_id": "acc_554"
+      },
+      "fees": {
+        "processing_fee": 500,
+        "currency": "JPY"
+      },
+      "metadata": {
+        "order_id": "ord_100",
+        "customer_id": "cust_064",
+        "failure_reason": "Limit exceeded"
+      }
+    },
+    {
+      "id": "f2f2f22",
+      "amount": 212,
+      "currency": "USD",
+      "status": "pending",
+      "timestamp": "2025-06-11T21:58:24.600Z",
+      "description": "sssssss",
+      "merchant": {
+        "name": "shervan2test",
+        "id": "3221f"
+      },
+      "payment_method": {
+        "type": "paypal",
+        "brand": "mastercard",
+        "last4": "1234"
+      },
+      "sender": {
+        "name": "shervan2test",
+        "account_id": "12"
+      },
+      "receiver": {
+        "name": "shervan2test",
+        "account_id": "12"
+      },
+      "fees": {
+        "processing_fee": 132,
+        "currency": "EUR"
+      },
+      "metadata": {
+        "order_id": "sd33",
+        "customer_id": "23131"
+      }
+    }
+  ]
+}
